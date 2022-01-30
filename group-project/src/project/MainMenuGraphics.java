@@ -61,8 +61,8 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 		charSelect.setLocation(MainMenu.RESOLUTION_X * 2 / 3 - charSelect.getWidth()/2, MainMenu.RESOLUTION_Y / 2 + 64);
 		title.setSize(MainMenu.RESOLUTION_X / 4, MainMenu.RESOLUTION_Y / 6);
 		title.setLocation(MainMenu.RESOLUTION_X / 2 - title.getWidth()/2, MainMenu.RESOLUTION_Y / 8);
-		ShopLabel.setSize(MainMenu.RESOLUTION_X / 6, MainMenu.RESOLUTION_Y / 6);
-		ShopLabel.setLocation(MainMenu.RESOLUTION_X / 3 - ShopLabel.getWidth()/2, MainMenu.RESOLUTION_Y / 2 + 70);
+		ShopLabel.setSize(MainMenu.RESOLUTION_X / 1.8 + 2, MainMenu.RESOLUTION_Y / 2 + 4 - 6);
+		ShopLabel.setLocation(MainMenu.RESOLUTION_X / 3 - ShopLabel.getWidth()/2, MainMenu.RESOLUTION_Y / 2 + 150);
 		hover.setSize(MainMenu.RESOLUTION_X / 6 + 16, MainMenu.RESOLUTION_Y / 6 + 16);
 		hover.setColor(new Color(0, 0, 0, 255));
 		hover.setFilled(true);
