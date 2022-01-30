@@ -24,5 +24,17 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
             		LevelLabel.setSize(perfect x value size, perfect y value size);
             		LevelLabel.setLocation(perfect x value size, perfect y value size);
             }
+            @Override
+	         public void showContents() {
+	         		program.add(ShopLabel);
+	         		program.add(CharacterLabel);
+	         		program.add(LevelLabel);
+	         }
+	         @Override
+	         public void hideContents() {
+	         		program.remove(ShopLabel);
+	         		program.remove(CharacterLabel);
+	         		program.remove(LevelLabel);
+	         }
 					
 }
