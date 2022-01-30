@@ -12,14 +12,17 @@ MainMenu.java and run the program. This is the only way to run the program
 
 public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 
-            GLabel ShopLabel = new;
-				GLabel("You can buy cards here", position under shop button, position under shop button);
-				ShopLabel.setColor(Color.GREEN);
-				GLabel LevelLabel = new;
-				GLabel("Defeat enemies gain coins!", position under Level button, position under label button);
-				LevelLabel.setColor(Color.GREEN);
-				GLabel CharacterLabel = new;
-				GLabel("Select your character", position under char select, position under char select button);
-				CharacterLabel.setColor(Color.GREEN);
+            Private Static GImage ShopLabel = new GImage("media/images/ShopLabel.png");
+            Private Static GImage CharacterLabel = new GImage("media/images/CharLabel.png");
+            Private Static GImage LevelLabel = new GImage(GImage("media/images/LevelLabel.png");
+            
+            public void initializeObjects() {
+            		ShopLabel.setSize(perfect x value size, perfect y value size);
+            		ShopLabel.setLocation(x location under shop button, y location under shop button);
+            		CharacterLabel.setSize(perfect x value size, perfect y value size);
+            		CharacterLabel.setLocation(perfect x value size, perfect y value size);
+            		LevelLabel.setSize(perfect x value size, perfect y value size);
+            		LevelLabel.setLocation(perfect x value size, perfect y value size);
+            }
 					
 }
