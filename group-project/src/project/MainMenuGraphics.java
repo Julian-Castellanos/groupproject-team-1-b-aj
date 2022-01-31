@@ -30,6 +30,7 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 	private static GImage background = new GImage("media/images/Background.png", 0, 0);//Yeah I know the background is low res, it's just a placeholder 
 	private static GImage quit = new GImage("media/images/Quit.png", 0, 0);
 	private static GImage ShopLabel = new GImage("media/images/ShopLabel.png");
+	private static GImage CharacterLabel = new GImage("media/images/CharacterLabel.png");
 	private AudioPlayer snd;
 	private Timer someTimeVar = new Timer(50, this);
 	private static GObject target;
@@ -63,6 +64,8 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 		title.setLocation(MainMenu.RESOLUTION_X / 2 - title.getWidth()/2, MainMenu.RESOLUTION_Y / 8);
 		ShopLabel.setSize(MainMenu.RESOLUTION_X / 1.8 + 2, MainMenu.RESOLUTION_Y / 2 + 4 - 6);
 		ShopLabel.setLocation(MainMenu.RESOLUTION_X / 3 - ShopLabel.getWidth()/2 - 50, MainMenu.RESOLUTION_Y / 2 + 145);
+		CharacterLabel.setSize(MainMenu.RESOLUTION_X / 1.8 + 2, MainMenu.RESOLUTION_Y / 2 + 4 - 6);
+		CharacterLabel.setLocation(MainMenu.RESOLUTION_X * 2 / 3 - CharacterLabel.getWidth()/2, MainMenu.RESOLUTION_Y / 2 + 145);
 		hover.setSize(MainMenu.RESOLUTION_X / 6 + 16, MainMenu.RESOLUTION_Y / 6 + 16);
 		hover.setColor(new Color(0, 0, 0, 255));
 		hover.setFilled(true);
@@ -160,6 +163,7 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 		program.add(charSelect);
 		program.add(quit);
 		program.add(ShopLabel);
+		program.add(CharacterLabel);
 	}
 	
 	@Override
@@ -175,6 +179,7 @@ public class MainMenuGraphics extends GraphicsPane implements ActionListener {
 		program.remove(charSelect);
 		program.remove(quit);
 		program.remove(ShopLabel);
+		program.remove(CharacterLabel);
 		someTimeVar.stop();
 		
 	}
